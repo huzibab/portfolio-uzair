@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "varino";
+    src: url(VarinoNormal.otf);
+}
+
+@font-face {
+    font-family: mokoto;
+    src: url(Mokoto_Demo.ttf);
+}
+
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abeezee-regular-italic {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(abtbg.png);
+    background-attachment: fixed;
+}
+
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 100px;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 20PX;
+}
+nav a{
+height: 100%;
+padding: 0 30px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: white;
+transition: color 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #1d9b71; /* Target color on hover */
+    text-decoration: underline;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:40%;
+    width: 170px;
+    z-index: 999;
+    background-color: #174f6e42;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(60, 91, 138, 0.123);display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+#content{
+margin: 39px;
+}
+
+.contact-head{
+    color: white;
+font-family: mokoto;
+letter-spacing: 8px;
+font-size: 75px;
+text-align: center;
+animation: fadin 5s;
+}
+
+@keyframes fadin {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#complete-pg{
+    color: white;
+    display: flex;
+    margin: 40px 0 0 0;
+}
+.cont-me{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5% 0 0 0;
+}
+
+#query-head{
+font-family: mokoto;
+letter-spacing: 7px;
+font-size: 28px;
+text-align: center;
+margin: 0 0 0 25px;
+}
+
+/* Form styles */
+form {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form header */
+form h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Input fields */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Textarea specifics */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit button */
+#submit {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for submit button */
+#submit:hover {
+    background-color: #218838;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 170px;
+}
+
+.imp-links{
+    margin: 0 0 0 30%;
+}
+
+#con-me{
+    font-family: mokoto;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 0 0 0 55px;
+}
+
+.cont{
+    width:9%;
+    margin: 20px 0 0 20px;
+}
+
+.social-media{
+    margin: 40px 0 0 0;
+}
+
+footer {
+
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px 0 7px 0;
+}
+
+@media (max-width: 800px) {
+    .hidden {
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    nav li{
+    font-size: 12px;
+    }
+}
+@media (min-width:0px) and (max-width: 500px){
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Full screen height */
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body {
+        overflow-x: hidden;
+      }
+    #complete-pg{
+        flex-direction: column;
+    }
+    .contact-head{
+        font-size: 38px;
+    }
+    #query-head{
+        font-size: 20px;
+    }
+    #query{
+    margin: 0 0 0 -30px;
+       width: 93vw;
+        display: inline;
+    }
+    form{
+        width: 83%;
+        margin: 0 0px 0 -14.5px;
+    }
+    #con-me{
+        text-align: center;
+        margin: 0;
+        margin: 0 0 0 5px;
+        width: 70vw;
+        font-size: 20px;
+    }
+    .imp-links{
+        margin: 0 0 0 65px;
+        width: 300px;
+    }
+}
+@media(min-width:500px) and (max-width: 800px){
+    form{
+        width: 50%;
+    }
+    #con-me{
+        margin:  70px 0 0px -40px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .cont-me{
+        margin: 40px 0 0 0;
+    }
+    #query-head{
+        font-size: 22px;
+        margin: 0 0px 0 -7px;
+        width:43.5vw;
+    }
+    .imp-links{
+        width: 350px;
+        margin: 0 0 0 65px;
+    }
+}

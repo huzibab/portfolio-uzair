@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "varino";
+    src: url(VarinoNormal.otf);
+}
+@font-face {
+    font-family: mokoto;
+    src: url(Mokoto_Demo.ttf);
+}
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .abeezee-regular-italic {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }  
+
+ body{
+    background:url(bgg.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+
+} */
+
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 100px;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 20PX;
+}
+nav a{
+height: 100%;
+padding: 0 30px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: white;
+transition: color 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #1d9b71; /* Target color on hover */
+    text-decoration: underline;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:40%;
+    width: 170px;
+    z-index: 999;
+    background-color: #174f6e42;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(60, 91, 138, 0.123);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+
+#welcome{
+    font-size: 60px;
+    font-family: varino;
+    margin: 30px 0 20px 0;
+    animation: fadein 5s;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.digital-para{
+    font-size: 28px;
+    width: 32%;
+    text-align: center;
+    margin: 50px 0 0 34.2%;
+}
+
+.digital, .explore, .discover{
+    color: aliceblue;
+}
+.digital{
+    font-family: "ABeeZee", sans-serif;
+    margin: 90px 0 0 0;
+    text-align: center;
+}
+.explore{
+    width: 50%;
+    text-align: justify;
+    font-family: mokoto;
+    letter-spacing: 12px;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto;
+}
+.discover{
+    font-size: 22px;
+    margin: -22px 0 0 0;
+    text-align: center;
+}
+#about{
+    text-decoration: underline;
+    color: white;
+}
+.content{
+    margin-top: -50px;
+}
+#footer{
+
+    color: white;
+    text-align: center;
+    margin-top: -11px;
+    padding: 45px 0 17px 0;
+    height: 75px;
+}
+#insta{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+}
+#linkdin{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+}
+#contact{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out; /* Transition duration and easing function */
+}
+#contact:hover{
+
+    text-decoration: underline;
+}
+#about{
+    font-style: italic;
+    transition: color 0.5s ease-in-out; /* Transition duration and easing function */
+    text-decoration: none;
+}
+#about:hover{
+    text-decoration: underline;
+    color: #1d9b71;
+}
+
+@media (max-width: 800px) {
+    /* body{
+        height: 100%;
+    } */
+    .hidden {
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    nav li{
+    font-size: 12px;
+    }
+}
+@media(min-width: 0px) and (max-width: 500px){
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Full screen height */
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        overflow-x: hidden;
+      }
+    
+    .content{
+        margin: -52px 0 0 0;
+    }
+    
+    #welcome{
+        width: 100%;
+        font-size:49px;
+    }
+    .digital-para{
+        width: 80%;
+        margin: 6% auto;
+    }
+    .explore{
+        width: 100%;
+        margin: 11% auto;
+    }
+
+    .logo{
+        margin: 4px 0 0 0;
+    }
+
+    #footer{
+        margin: 130px 0 0 0;
+    }
+    
+}
+@media (min-width:500px) and (max-width:800px) {
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Full screen height */
+        background-attachment: fixed;
+    }
+    .content{
+        margin: -82px 0 0 0;
+    }
+    .explore{
+        width: 80%;
+        margin: 4% auto;
+    }
+    .digital-para{
+        width: 49%;
+        margin: 5% auto;
+    }
+    #footer{
+        margin: 22px 0 -80% 0;
+    }
+    
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="services.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+</head>
+<!-- <script src="abt.js"></script> -->
+ <script src="nav.js"></script>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hide()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="mainpg.html">Home</a></li>
+                <li><a href="abt.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li> <img src="yellowlogo.png" alt="logo" width="100" class="logo"></li>
+                <li class="hidden"><a href="mainpg.html">Home</a></li>
+                <li class="hidden"><a href="abt.html">About</a></li>
+                <li class="hidden"><a href="services.html">Services</a></li>
+                <li class="hidden"><a href="contact.html">Contact</a></li>
+                <li class="menu-button" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#fff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="service-head">Services</h1>
+        <section id="my-services">
+            <div class="uiux" data-aos="fade-up"  data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <img src="UIUxbgg.png" alt="UI/UX Design" id="uiux-img">
+                <!-- this will be a div with flex properties -->
+                <div id="uiux-text">
+                    <h3 id="uiux-head">UI/UX Design</h3>
+                    <!--this div will have flex properties and will be in column direction-->
+                    <p id="uiux-para">I specialize in crafting visually compelling and user-friendly interfaces that
+                        enhance user
+                        engagement and satisfaction. By leveraging tools like Canva and industry-standard design
+                        principles, I create intuitive designs that align with modern trends and user expectations. My
+                        design philosophy centers around creating clean, futuristic layouts that are both functional and
+                        aesthetically pleasing, ensuring a seamless user experience across all devices.</p>
+                </div>
+            </div>
+            <div class="webdesign hiden" data-aos="fade-up"  data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div id="web-design-text">
+                    <h3 id="web-design-head">Web Design</h3>
+                    <p id="web-design-para">I offer bespoke web design services to enhance your brand's visual appeal
+                        and effectiveness. By
+                        tailoring
+                        each design to your unique needs, I ensure that your website stands out with a distinctive and
+                        compelling look. I employ cutting-edge design principles and best practices to craft
+                        aesthetically
+                        pleasing and user-friendly interfaces. Additionally, I integrate sophisticated animations and
+                        interactive elements to create a dynamic and engaging experience that captures your audience's
+                        attention
+                        and aligns with your brand's identity.</p>
+                </div>
+                <img src="webdesign.jpg" alt="web design" id="web-design-img">
+            </div>
+            <div class="fullstack hiden" data-aos="fade-up"  data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <img src="fullstack-removebg-preview.png" alt="Full stack web dev" id="fullstack-img">
+                <div id="fullstack-text">
+                    <h3 id="fullstack-head">Full Stack Development</h3>
+                    <p id="fullstack-para">As I expand my skills, my goal is to offer comprehensive full-stack
+                        development services. This includes front-end development, creating visually appealing user
+                        interfaces, and back-end integration with robust technologies like Node.js and PHP. I aim to
+                        manage databases using platforms like MySQL and MongoDB, ensuring secure and scalable solutions.
+                        From initial design to final deployment, I focus on delivering cohesive, fully functional
+                        websites tailored to meet business needs. My approach integrates UI/UX design with server-side
+                        functionality, providing seamless, user-friendly, and technically sound products.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <p><a href="#" id="contact">Contact Me</a> for further queries!</p>
+        <p>All Rights Reserved&#169</p>
+        <a href="https://www.instagram.com/mohammaduzairwaheed" target="_blank"><img
+                src="black-instagram-icon.png" alt="insragram" id="insta"></a>
+        <a href="https://www.linkedin.com/in/uzairwaheed63/" target="_blank"><img src="linkedin.png"
+                alt="linkedin" id="linkdin"></a>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
