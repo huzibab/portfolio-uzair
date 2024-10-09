@@ -247,10 +247,7 @@ nav li:first-child{
         margin: 0;
         padding: 0;
     }
-    
-    html, body {
-        overflow-x: hidden;
-      }
+
     #head-about{
     font-size: 45px;
 }
