@@ -255,12 +255,7 @@ nav li:first-child{
         height: 100vh; /* Full screen height */
         margin: 0;
         padding: 0;
-    }
-
-    html, body {
-        overflow-x: hidden;
-      }
-      
+    }      
       #service-head{
         font-size: 50px;
 
@@ -340,12 +335,7 @@ nav li:first-child{
         height: 100vh; /* Full screen height */
         margin: 0;
         padding: 0;
-    }
-
-    html, body {
-        overflow-x: hidden;
-      }
-      
+    }      
       #service-head{
         font-size: 70px;
 
