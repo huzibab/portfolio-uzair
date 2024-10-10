@@ -58,14 +58,15 @@
 
                         </div>
                     </div>
-                    <form action="" data-aos="fade-up" data-aos-duration="3000" id="form1">
+                    <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-duration="3000" id="form1">
                         <h1>Get a Quote</h1>
-                        <input type="text" placeholder="Name" id="name">
+                        <input type="hidden" name="access_key" value="557b2ddb-8cb8-476c-8d2c-423bb7bb3426">
+                        <input type="text" placeholder="Name" id="name" name="name">
                         <div id="nm-error"></div>
-                        <input type="email" name="" id="email" placeholder="email">
-        <div id="eml-err"></div>
-                        <textarea name="" id="msg" placeholder="Message"></textarea>
-        <div id="msg-err"></div>
+                        <input type="email" id="email" placeholder="email" name="email">
+                        <div id="eml-err"></div>
+                        <textarea name="message" id="msg" placeholder="Message"></textarea>
+                        <div id="msg-err"></div>
 
                         <input type="submit" value="Submit" id="submit">
                     </form>
